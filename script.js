@@ -59,8 +59,9 @@ function showTime() {
   } else if (currentTime.isBefore(time1)) {
     $(".form9").addClass("future");
   } else if (currentTime.isBefore(time1)) {
-    $(".form9").addClass("present");0
-  };000000000000
+    $(".form9").addClass("present");
+    0;
+  }
   // Add time2 10 AM
   time2 = moment().startOf("day").add(10, "hours");
   // Add time2 if/else
@@ -70,94 +71,94 @@ function showTime() {
     $(".form10").addClass("future");
   } else if (currentTime.isBefore(time2)) {
     $(".form10").addClass("present");
-  };
+  }
   // Add time3 11 AM
   time3 = moment().startOf("day").add(11, "hours");
-  // Add time2 if/else
+  // Add time3 if/else
   if (currentTime.isAfter(time3)) {
     $(".form11").addClass("past");
   } else if (currentTime.isBefore(time3)) {
     $(".form11").addClass("future");
   } else if (currentTime.isBefore(time3)) {
     $(".form11").addClass("present");
-  };
-  // Add time2 10 AM
+  }
+  // Add time4 12 AM
   time4 = moment().startOf("day").add(12, "hours");
-  // Add time2 if/else
+  // Add time4 if/else
   if (currentTime.isAfter(time4)) {
     $(".form12").addClass("past");
   } else if (currentTime.isBefore(time4)) {
     $(".form12").addClass("future");
   } else if (currentTime.isBefore(time4)) {
     $(".form12").addClass("present");
-  };
-  // Add time2 10 AM
+  }
+  // Add time5 1 PM
   time5 = moment().startOf("day").add(13, "hours");
-  // Add time2 if/else
+  // Add time5 if/else
   if (currentTime.isAfter(time5)) {
-    $(".form13").addClass("past");
+    $(".form1").addClass("past");
   } else if (currentTime.isBefore(time5)) {
-    $(".form13").addClass("future");
+    $(".form1").addClass("future");
   } else if (currentTime.isBefore(time5)) {
-    $(".form13").addClass("present");
-  };
-  // Add time2 10 AM
+    $(".form1").addClass("present");
+  }
+  // Add time6 2 PM
   time6 = moment().startOf("day").add(14, "hours");
-  // Add time2 if/else
+  // Add time6 if/else
   if (currentTime.isAfter(time6)) {
-    $(".form14").addClass("past");
+    $(".form2").addClass("past");
   } else if (currentTime.isBefore(time6)) {
-    $(".form14").addClass("future");
+    $(".form2").addClass("future");
   } else if (currentTime.isBefore(time6)) {
-    $(".form14").addClass("present");
-  };
-  // Add time2 10 AM
+    $(".form2").addClass("present");
+  }
+  // Add time7 3 PM
   time7 = moment().startOf("day").add(15, "hours");
   // Add time2 if/else
   if (currentTime.isAfter(time7)) {
-    $(".form15").addClass("past");
+    $(".form3").addClass("past");
   } else if (currentTime.isBefore(time7)) {
-    $(".form15").addClass("future");
+    $(".form3").addClass("future");
   } else if (currentTime.isBefore(time7)) {
-    $(".form15").addClass("present");
-  };
-  // Add time2 10 AM
+    $(".form3").addClass("present");
+  }
+  // Add time8 4 PM
   time8 = moment().startOf("day").add(16, "hours");
-  // Add time2 if/else
+  // Add time8 if/else
   if (currentTime.isAfter(time8)) {
-    $(".form16").addClass("past");
+    $(".form4").addClass("past");
   } else if (currentTime.isBefore(time8)) {
-    $(".form16").addClass("future");
+    $(".form4").addClass("future");
   } else if (currentTime.isBefore(time8)) {
-    $(".form16").addClass("present");
-  };
-  // Add time2 10 AM
+    $(".form4").addClass("present");
+  }
+  // Add time9 5 PM
   time9 = moment().startOf("day").add(17, "hours");
-  // Add time2 if/else
+  // Add time9 if/else
   if (currentTime.isAfter(time9)) {
-    $(".form17").addClass("past");
+    $(".form5").addClass("past");
   } else if (currentTime.isBefore(time9)) {
-    $(".form17").addClass("future");
+    $(".form5").addClass("future");
   } else if (currentTime.isBefore(time9)) {
-    $(".form17").addClass("present");
-  };
+    $(".form5").addClass("present");
+  }
 }
 
 showTime();
 // Loop through input to get item from local storage
 var x = [9, 10, 11, 12, 1, 2, 3, 4, 5];
 // showTime loop
-for (let i=0; i < x.length; i++) {
-    let dataHour = localStorage.getItem(x[i]);
+for (let i = 0; i < x.length; i++) {
+  let dataHour = localStorage.getItem(x[i]);
 
-    $(".form" + x[i]).val(dataHour);
+  $(".form" + x[i]).val(dataHour);
 }
 
 // Even listener saving to local storage
-$('.saveBtn').click(function () {
-    event.preventDefault();
-    let formValue = $(this).siblings(".form-control").val();
-    let listItem = $(this).parent().data('hour');
+$(".saveBtn").click(function () {
+  event.preventDefault();
+  let formValue = $(this).siblings(".form-control").val();
+  let listItem = $(this).parent().data("hour");
 
-    localStorage.setItem(listItem, formValue);
+  localStorage.setItem(listItem, formValue);
 });
