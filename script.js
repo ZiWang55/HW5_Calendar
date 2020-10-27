@@ -60,7 +60,6 @@ function showTime() {
     $(".form9").addClass("future");
   } else if (currentTime.isBefore(time1)) {
     $(".form9").addClass("present");
-    0;
   }
   // Add time2 10 AM
   time2 = moment().startOf("day").add(10, "hours");
