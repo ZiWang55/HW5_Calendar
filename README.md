@@ -8,17 +8,18 @@ Utilized the [Moment.js](https://momentjs.com/) library to work with date and ti
 
 ## Preview
 
-![Gif](Assets\Work-Day-Scheduler.gif)
+![Gif](https://github.com/ZiWang55/HW5_DayPlanner/blob/main/Assets/Work-Day-Scheduler.gif?raw=true)
 
 ## Installation
 
-Repository code can be seen here https://github.com/ZiWang55/HW5_DayPlanner Live site link is here https://ziwang55.github.io/HW5_DayPlanner/
+Repository code can be seen here https://github.com/ZiWang55/HW5_DayPlanner 
+Live site link is here https://ziwang55.github.io/HW5_DayPlanner/
 
 If you would like to contribute please use terminal to gitclone https://github.com/ZiWang55/HW5_DayPlanner.git
 
 ## W3Validator
 
-![w3validator-link](https://validator.w3.org/nu/?doc=https%3A%2F%2Fziwang55.github.io%2FHW5_DayPlanner%2F)
+[w3validator-link](https://validator.w3.org/nu/?doc=https%3A%2F%2Fziwang55.github.io%2FHW5_DayPlanner%2F)
 
 ## License
-&copy Zi Wang
+(c)Copyright Zi Wang
