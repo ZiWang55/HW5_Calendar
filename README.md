@@ -12,7 +12,8 @@ Utilized the [Moment.js](https://momentjs.com/) library to work with date and ti
 
 ## Installation
 
-Repository code can be seen here https://github.com/ZiWang55/HW5_DayPlanner Live site link is here https://ziwang55.github.io/HW5_DayPlanner/
+Repository code can be seen here https://github.com/ZiWang55/HW5_DayPlanner 
+Live site link is here https://ziwang55.github.io/HW5_DayPlanner/
 
 If you would like to contribute please use terminal to gitclone https://github.com/ZiWang55/HW5_DayPlanner.git
 
